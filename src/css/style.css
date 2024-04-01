@@ -1,0 +1,128 @@
+:root {
+    --amarelo-lookfit: #E89801;
+}
+
+@font-face {
+    font-family: 'Azonix';
+    src: url(../../public/assets/fonts/FONT.otf);
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url(../../public/assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat medium';
+    src: url(../../public/assets/fonts/Montserrat-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    padding: 25px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+header {
+    font-family: 'Montserrat bold';
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header img {
+    width: 280px;
+}
+
+header h1 a {
+    font-family: 'Azonix';
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+header h2 .lookfit, .treinou {
+    color: var(--amarelo-lookfit);
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.link-container a {
+    width: 300px;
+    height: 60px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--amarelo-lookfit);
+    border-radius: 30px;
+    font-family: 'Montserrat medium';
+    font-size: 24px;
+    color: white;
+    padding: 8px;
+}
+
+.link-container a:active {
+    background-color: var(--amarelo-lookfit);
+}
+
+a .icon-container {
+    width: 45px;
+    height: 45px;
+    background-color: var(--amarelo-lookfit);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'Montserrat medium';
+    font-size: 12px;
+    color: white;
+}

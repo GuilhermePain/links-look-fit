@@ -1,0 +1,180 @@
+:root {
+    --amarelo-lookfit: #E89801;
+}
+
+@font-face {
+    font-family: 'Azonix';
+    src: url(../../public/assets/fonts/FONT.otf);
+}
+
+@font-face {
+    font-family: 'Montserrat light';
+    src: url(../../public/assets/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat medium';
+    src: url(../../public/assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat bold';
+    src: url(../../public/assets/fonts/Montserrat-Bold.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat medium';
+    padding: 18px;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    color: var(--amarelo-lookfit);
+    background-color: black;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.itens-container {
+    width: 100%;
+    padding : 18px;
+}
+
+.itens-container h2 {
+    color: var(--amarelo-lookfit);
+    font-family: 'Montserrat medium';
+}
+
+.itens-container h3 {
+    margin-top: 15px;
+    font-family: 'Montserrat medium'
+}
+
+.itens-container .itens-content {
+    padding: 15px 0;
+    display: flex;
+    gap: 4px;
+    overflow: auto;
+}
+
+.itens-container .itens-content::-webkit-scrollbar {
+    height: 3px;
+}
+
+.itens-container .itens-content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.itens-container .itens-content::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 30px;
+    width: 5px;
+}
+
+.itens-container .item-card {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.item-card img {
+    width: 160px;
+    height: 153px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.item-informations {
+    padding: 6px;
+}
+
+.item-card .item-name {
+    font-family: 'Montserrat light';
+    font-size: 12px;
+}
+
+.item-card .item-price {
+    font-family: 'Montserrat bold';
+    color: var(--amarelo-lookfit);
+}
+
+.item-card .btn-mais-informacoes {
+    width: 100%;
+    background: var(--amarelo-lookfit);
+    font-family: 'Montserrat bold';
+    font-size: 8px;
+    color: white;
+    padding: 6px 0;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.section-mais-informacoes {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.463);
+}
+
+.section-mais-informacoes img {
+    width: 100%;
+}
+
+.section-mais-informacoes .informacoes {
+    background-color: lightcoral;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.section-mais-informacoes .
