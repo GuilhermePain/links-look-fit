@@ -10,7 +10,7 @@ function insertYear() {
 }
 
 function testeAlterandoAtributo(){
-    const imagem = document.getElementById('img').src;
+    const imagem = document.querySelector('#img').getAttribute('src');
     const a = document.querySelector('#a');
     a.href = `https://api.whatsapp.com/send?phone=5585991805388&text=${imagem}`;
 }
