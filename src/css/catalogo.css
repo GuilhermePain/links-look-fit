@@ -163,6 +163,7 @@ nav button {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.463);
+    color: black;
 }
 
 .section-mais-informacoes img {
@@ -170,10 +171,28 @@ nav button {
 }
 
 .section-mais-informacoes .informacoes {
-    background-color: lightcoral;
+    height: 100%;
+    background-color: white;
     padding: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: start;
+}
+
+#close-modal {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: var(--amarelo-lookfit);
+    background-color: rgba(255, 255, 255, 0.221);
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
 }
