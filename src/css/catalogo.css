@@ -164,6 +164,7 @@ nav button {
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.463);
     color: black;
+    font-family: 'Montserrat medium';
 }
 
 .section-mais-informacoes img {
@@ -177,6 +178,7 @@ nav button {
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 5px;
 }
 
 #close-modal {
@@ -196,3 +198,15 @@ nav button {
     font-size: 22px;
     cursor: pointer;
 }
+
+.informacoes .price-mais-informacoes {
+    color: var(--amarelo-lookfit);
+    font-size: 24px;
+}
+
+.informacoes .name-mais-informacoes {
+    font-family: 'Montserrat bold';
+    font-size: 22px;
+}
+
+.informacoes 
