@@ -6,13 +6,11 @@ function maisInformacoes() {
     btnMaisInformacoes.forEach(buttons => {
         buttons.addEventListener('click', () => {
             modalMaisInformacoes.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
         })
     })
 
     closeModal.addEventListener('click', () => {
         modalMaisInformacoes.style.display = 'none';
-        document.body.style.overflow = 'auto';
     })
 
     function pedirNoWhatsapp() {
