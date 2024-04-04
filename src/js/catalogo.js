@@ -12,8 +12,28 @@ function maisInformacoes() {
 
     closeModal.addEventListener('click', () => {
         modalMaisInformacoes.style.display = 'none';
-        document.body.style.overflow = 'auto'; //
+        document.body.style.overflow = 'auto';
     })
+
+    function pedirNoWhatsapp() {
+        const data = new Date();
+        const hora = data.getHours();
+        let saudacao;
+
+        if (hora >= 12 && hora < 18) {
+            saudacao = 'boa tarde!';
+        } else if (hora >= 18 ) {
+            saudacao = 'boa noite!';
+        } else {
+            saudacao = 'bom dia!';
+        }
+
+        const linkWhatsapp = document.querySelector('#link-whatsapp');
+        linkWhatsapp.href = `https://api.whatsapp.com/send?phone=5585991805388&text=Olá, ${saudacao} Vim do catálogo.`;
+
+    }
+
+    pedirNoWhatsapp();
 }
 
-maisInformacoes();
+maisInformacoes(); 
