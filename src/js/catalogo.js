@@ -13,18 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const nome = itemCard.querySelector('.item-name').textContent;
             const preco = itemCard.querySelector('.item-price').textContent;
 
-            // Atualiza a imagem, nome e preço no modal
             modalImagem.src = imagem.src;
             modalNome.textContent = nome;
             modalPreco.textContent = preco;
 
-            // Exibe o modal
             modalMaisInformacoes.style.display = 'flex';
         });
     });
 
     closeModal.addEventListener('click', function() {
-        // Esconde o modal ao clicar no botão de fechar
         modalMaisInformacoes.style.display = 'none';
     });
 });
