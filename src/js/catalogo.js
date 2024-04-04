@@ -5,7 +5,7 @@ function maisInformacoes() {
 
     btnMaisInformacoes.forEach(buttons => {
         buttons.addEventListener('click', () => {
-            modalMaisInformacoes.style.display = 'block';
+            modalMaisInformacoes.style.display = 'flex';
             document.body.style.overflow = 'hidden';
         })
     })
