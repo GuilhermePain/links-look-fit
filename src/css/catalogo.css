@@ -22,11 +22,22 @@
     src: url(../../public/assets/fonts/Montserrat-Bold.ttf);
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Definição da animação para aparecer os elementos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 body {
@@ -38,6 +49,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Duração, tipo de transição e preenchimento */
 }
 
 main {
@@ -163,6 +176,7 @@ nav button {
     height: 100%;
     display: none;
     backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.850);
     flex-direction: column;
     justify-content: center;
     align-items: center;
