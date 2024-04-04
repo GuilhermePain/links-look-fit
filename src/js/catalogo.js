@@ -6,11 +6,13 @@ function maisInformacoes() {
     btnMaisInformacoes.forEach(buttons => {
         buttons.addEventListener('click', () => {
             modalMaisInformacoes.style.display = 'block';
+            document.body.style.overflow = 'hidden';
         })
     })
 
     closeModal.addEventListener('click', () => {
         modalMaisInformacoes.style.display = 'none';
+        document.body.style.overflow = 'auto'; //
     })
 }
 
