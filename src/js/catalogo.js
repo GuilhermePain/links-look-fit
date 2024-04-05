@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+function maisInformacoes(){
     const btnMaisInformacoes = document.querySelectorAll('.btn-mais-informacoes');
     const modalMaisInformacoes = document.querySelector('.section-mais-informacoes');
     const closeModal = document.querySelector('#close-modal');
@@ -18,10 +18,23 @@ document.addEventListener('DOMContentLoaded', function() {
             modalPreco.textContent = preco;
 
             modalMaisInformacoes.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            function levarAoTopo(){
+                window.scrollTo({
+               top: 0
+                });
+            }
+
+            levarAoTopo();
+
         });
     });
 
     closeModal.addEventListener('click', function() {
         modalMaisInformacoes.style.display = 'none';
+        document.body.style.overflow = 'auto';
     });
-});
+}
+
+maisInformacoes();
