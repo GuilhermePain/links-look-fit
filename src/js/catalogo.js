@@ -38,3 +38,7 @@ function maisInformacoes(){
 }
 
 maisInformacoes();
+
+function filtrarItens(){
+    
+}
