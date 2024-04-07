@@ -141,6 +141,16 @@
         border-radius: 10px 10px 0 0;
     }
 
+    .etiqueta-desconto {
+        background-color: var(--amarelo-lookfit);
+        position: absolute;
+        color: white;
+        border-radius: 0 30px 30px 0;
+        padding: 3px;
+        font-family: 'Montserrat Medium';
+        font-size: 10px;
+    }
+
     .item-informations {
         padding: 8px;
     }
