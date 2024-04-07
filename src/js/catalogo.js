@@ -5,6 +5,7 @@ function maisInformacoes(){
     const modalImagem = document.querySelector('.section-mais-informacoes img');
     const modalNome = document.querySelector('.section-mais-informacoes .name-mais-informacoes');
     const modalPreco = document.querySelector('.section-mais-informacoes .price-mais-informacoes');
+    const modalDesconto = document.querySelector('.section-mais-informacoes .desconto-mais-informacoes');
 
     btnMaisInformacoes.forEach(button => {
         button.addEventListener('click', function() {
@@ -12,22 +13,29 @@ function maisInformacoes(){
             const imagem = itemCard.querySelector('img');
             const nome = itemCard.querySelector('.item-name').textContent;
             const preco = itemCard.querySelector('.item-price').textContent;
+            const desconto = itemCard.querySelector('.etiqueta-desconto p');
 
             modalImagem.src = imagem.src;
             modalNome.textContent = nome;
             modalPreco.textContent = preco;
+
+            if (desconto) {
+                modalDesconto.style.display = 'block';
+                modalDesconto.textContent = desconto.textContent;
+            } else {
+                modalDesconto.style.display = 'none';
+            }
 
             modalMaisInformacoes.style.display = 'flex';
             document.body.style.overflow = 'hidden';
 
             function levarAoTopo(){
                 window.scrollTo({
-               top: 0
+                    top: 0
                 });
             }
 
             levarAoTopo();
-
         });
     });
 
@@ -38,7 +46,3 @@ function maisInformacoes(){
 }
 
 maisInformacoes();
-
-function filtrarItens(){
-    
-}

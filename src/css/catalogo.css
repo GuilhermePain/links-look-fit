@@ -228,6 +228,12 @@
         cursor: pointer;
     }
 
+    .informacoes .desconto-mais-informacoes {
+        background-color: var(--amarelo-lookfit);
+        border-radius: 30px;
+        padding: 10px 14px;
+    }
+
     .informacoes .price-mais-informacoes {
         color: var(--amarelo-lookfit);
         font-size: 24px;
