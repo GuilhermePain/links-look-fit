@@ -89,3 +89,10 @@ nav button {
     padding: 0 8px;
     cursor: pointer;
 }
+
+footer a {
+    text-decoration: none;
+    font-family: 'Montserrat medium';
+    font-size: 12px;
+    color: white;
+}
