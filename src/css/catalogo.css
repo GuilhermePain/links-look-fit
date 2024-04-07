@@ -169,10 +169,17 @@
         font-size: 10px;
         color: white;
         padding: 6px 0;
-        border: none;
+        border: 1px solid transparent;
         border-radius: 40px;
         cursor: pointer;
         margin-top: 5px;
+    }
+
+    .btn-mais-informacoes:active {
+        background-color: transparent;
+        border: 1px solid var(--amarelo-lookfit);
+        color: var(--amarelo-lookfit);
+        transition-duration: 0.3s;
     }
 
     .section-mais-informacoes {
@@ -227,6 +234,13 @@
         cursor: pointer;
     }
 
+    #close-modal:active {
+        background-color: transparent;
+        border: 1px solid var(--amarelo-lookfit);
+        color: var(--amarelo-lookfit);
+        transition-duration: 0.3s;
+    }
+
     .informacoes .desconto-mais-informacoes {
         text-align: center;
         width: 140px;
@@ -258,6 +272,13 @@
         border-radius: 40px;
         cursor: pointer;
         margin-top: 15px;
+    }
+
+    .btn-pedir-no-whatsapp:active {
+        background-color: transparent;
+        border: 1px solid var(--amarelo-lookfit);
+        color: var(--amarelo-lookfit);
+        transition-duration: 0.3s;
     }
 
     .filter-bar {
