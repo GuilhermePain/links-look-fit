@@ -229,9 +229,13 @@
     }
 
     .informacoes .desconto-mais-informacoes {
-        background-color: var(--amarelo-lookfit);
+        text-align: center;
+        width: 140px;
+        font-size: 10px;
+        border: 1px solid var(--amarelo-lookfit);
         border-radius: 30px;
-        padding: 10px 14px;
+        padding: 10px;
+        color: var(--amarelo-lookfit);
     }
 
     .informacoes .price-mais-informacoes {
@@ -242,19 +246,6 @@
     .informacoes .name-mais-informacoes {
         font-family: 'Montserrat bold';
         font-size: 22px;
-    }
-
-    .informacoes .tamanhos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .tamanhos > div {
-        border: 1px solid black;
-        border-radius: 30px;
-        padding: 4px 16px;
     }
 
     .informacoes .btn-pedir-no-whatsapp {
