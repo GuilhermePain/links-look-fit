@@ -6,11 +6,11 @@ function maisInformacoes(){
     const modalNome = document.querySelector('.section-mais-informacoes .name-mais-informacoes');
     const modalPreco = document.querySelector('.section-mais-informacoes .price-mais-informacoes');
     const modalDesconto = document.querySelector('.section-mais-informacoes .desconto-mais-informacoes');
-    let scrollPosition = 0;
+    let posicaoDoScroll = 0;
 
     btnMaisInformacoes.forEach(button => {
         button.addEventListener('click', function() {
-            scrollPosition = window.pageYOffset;
+            posicaoDoScroll = window.pageYOffset;
             const itemCard = this.closest('.item-card');
             const imagem = itemCard.querySelector('img');
             const nome = itemCard.querySelector('.item-name').textContent;
