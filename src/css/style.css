@@ -120,6 +120,7 @@ header h2 .lookfit, .treinou {
 
 .link-container a:active {
     background-color: var(--amarelo-lookfit);
+    transition-duration: 0.3s;
 }
 
 a .icon-container {
