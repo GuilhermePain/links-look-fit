@@ -157,7 +157,7 @@
         font-size: 12px;
     }
 
-    .item-card .item-price {
+    .item-card .item-price, .item-price-top, .item-price-short {
         font-family: 'Montserrat bold';
         color: var(--amarelo-lookfit);
     }
