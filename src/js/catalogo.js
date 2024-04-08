@@ -1,19 +1,3 @@
-function lockScreenOrientation() {
-    const lockOrientation = () => {
-        if (screen.orientation.lock) {
-            screen.orientation.lock('portrait').catch(err => console.error(err));
-        }
-    };
-
-    const unlockOrientation = () => {
-        if (screen.orientation.unlock) {
-            screen.orientation.unlock();
-        }
-    };
-
-    return { lockOrientation, unlockOrientation };
-}
-
 function maisInformacoes() {
     const btnMaisInformacoes = document.querySelectorAll('.btn-mais-informacoes');
     const modalMaisInformacoes = document.querySelector('.section-mais-informacoes');
@@ -73,5 +57,4 @@ function maisInformacoes() {
     });
 }
 
-const { lockOrientation, unlockOrientation } = lockScreenOrientation();
 maisInformacoes();
