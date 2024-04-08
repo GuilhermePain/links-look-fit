@@ -165,8 +165,6 @@
     }
 
     .item-card .btn-mais-informacoes {
-        position: relative;
-        bottom: 0;
         width: 100%;
         background: var(--amarelo-lookfit);
         font-family: 'Montserrat bold';
@@ -176,6 +174,7 @@
         border: 1px solid transparent;
         border-radius: 40px;
         cursor: pointer;
+        margin-top: 5px;
     }
 
     .btn-mais-informacoes:active {
