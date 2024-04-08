@@ -10,23 +10,23 @@
     <title>LOOKFIT | Catálogo</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="./index.html">
+                <button>
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+            </a>
+            <h1>Catálogo</h1>
+            &nbsp;
+            <!--<a href="">
+                <button id="btn-filtro">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+            </a>-->
+        </nav>
+    </header>
     <main>
-        <header>
-            <nav>
-                <a href="./index.html">
-                    <button>
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                </a>
-                <h1>Catálogo</h1>
-                &nbsp;
-                <!--<a href="">
-                    <button id="btn-filtro">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                </a>-->
-            </nav>
-        </header>
         <div class="itens-container">
             <h2>
                 Masculino
@@ -35,7 +35,7 @@
                 Camisetas
             </h3>
             <hr>
-            <div class="itens-content" id="camisetas">
+            <section class="itens-content" id="camisetas">
                 <div class="item-card">
                     <img src="public/assets/images/camisetas/camiseta-verde-musgo.jpg" alt="">
                     <div class="btn-add-to-cart">
@@ -166,10 +166,10 @@
                         <button class="btn-mais-informacoes">Mais Informações</button>
                     </div>
                 </div>
-            </div>
+            </section>
             <h3>Regatas</h3>
             <hr>
-            <div class="itens-content" id="regatas">
+            <section class="itens-content" id="regatas">
                 <div class="item-card">
                     <img src="public/assets/images/regatas/regata-verde-pastel.jpg" alt="">
                     <div class="btn-add-to-cart">
@@ -410,10 +410,10 @@
                         <button class="btn-mais-informacoes">Mais Informações</button>
                     </div>
                 </div>
-            </div>
+            </section>
             <h3>Shorts</h3>
             <hr>
-            <div class="itens-content" id="Shorts">
+            <section class="itens-content" id="Shorts">
                 <div class="item-card">
                     <img src="public/assets/images/boardshorts/short-azul-escuro.jpg" alt="">
                     <div class="btn-add-to-cart">
@@ -666,7 +666,7 @@
                         <button class="btn-mais-informacoes">Mais Informações</button>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <section class="itens-container" id="feminino">
             <h2>
@@ -676,7 +676,7 @@
                 Conjuntos - tops, shorts e leggings
             </h3>
             <hr>
-            <div class="itens-content" id="conjuntos">
+            <section class="itens-content" id="conjuntos">
                 <div class="item-card">
                     <img src="public/assets/images/tops/top-cirre-preto.jpg" alt="">
                     <div class="btn-add-to-cart">
@@ -923,12 +923,12 @@
                     </div>
                 </div>
                 
-            </div>
+            </section>
             <h3>
                 Outlet
             </h3>
             <hr>
-            <div class="itens-content" id="outlet">
+            <section class="itens-content" id="outlet">
                 <div class="item-card">
                     <img src="public/assets/images/tops/outlet-top-verde-agua-short-verde-escuro.jpg" alt="">
                     <div class="etiqueta-desconto">
@@ -1020,9 +1020,6 @@
                 </a>
             </div>
         </section>
-        <div class="filter-bar">
-            <h2>Filtrar por</h2>
-        </div>
     </main>
     <footer>
         <a href="https://linktr.ee/GuilhermeRochadeAlmeida">
