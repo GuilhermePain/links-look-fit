@@ -21,7 +21,6 @@ function maisInformacoes() {
             modalImagem.src = imagem.src;
             modalNome.textContent = nome;
 
-            // Verifica se o item possui preço de top e short
             if (precoTop && precoShort) {
                 modalPreco.innerHTML = `${precoTop.textContent}<br>${precoShort.textContent}`;
             } else {
@@ -29,7 +28,6 @@ function maisInformacoes() {
                 modalPreco.textContent = `Preço: ${precoNormal.textContent}`;
             }
 
-            // Exibe o desconto se houver
             if (desconto) {
                 modalDesconto.style.display = 'block';
                 modalDesconto.textContent = desconto.textContent;
